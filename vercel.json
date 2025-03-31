@@ -1,11 +1,15 @@
 
 
 {
-    "builds": [{
-        "src": "myapp/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "runtime": "python3.10" }
-    }],
+    "build": {
+      "env": {
+        "CFLAGS": "--add-needed-libraries",
+        "LDFLAGS": "-lmysqlclient"
+      }
+    }
+  }
+  
+ { 
     "routes": [
         {
             "src": "/(.*)",
