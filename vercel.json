@@ -1,19 +1,13 @@
-
-
 {
-    "build": {
-      "env": {
-        "CFLAGS": "--add-needed-libraries",
-        "LDFLAGS": "-lmysqlclient"
-      }
-    }
-  }
-  
- { 
+    "builds": [{
+        "src": "djangoprojectname/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "myapp/wsgi.py"
+            "dest": "djangoprojectname/wsgi.py"
         }
     ]
 }
