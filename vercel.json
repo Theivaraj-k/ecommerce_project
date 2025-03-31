@@ -3,7 +3,7 @@
     "builds": [{
         "src": "myapp/wsgi.py",
         "use": "@vercel/python",
-        "config": { "runtime": "python3.13" }
+        "config": { "installCommand": "pip install --upgrade pip && pip install -r requirements.txt" }
     }],
     "routes": [
         {
