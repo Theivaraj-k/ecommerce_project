@@ -20,7 +20,7 @@ from .models import Feature, Category, Product, ProductColor, ProductStorage, Pr
 def product_list(request):
 
     
-    store_title ="TechVersee"
+    store_title ="TechVerse"
     features = Feature.objects.all()
     return render(request, 'store/home.html', {'store_title':store_title,'features':features})
 
