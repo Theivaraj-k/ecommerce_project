@@ -1,14 +1,15 @@
 
+
 {
     "builds": [{
-        "src": "myapp/wsgi.py",
+        "src": "djangoprojectname/wsgi.py",
         "use": "@vercel/python",
-        "config": { "installCommand": "pip install --upgrade pip && pip install -r requirements.txt" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "myapp/wsgi.py"
+            "dest": "djangoprojectname/wsgi.py"
         }
     ]
 }
