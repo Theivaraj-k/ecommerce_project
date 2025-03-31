@@ -115,3 +115,14 @@ class RelatedProduct(models.Model):
     
     class Meta:
         unique_together = ('product', 'related')
+
+
+
+
+
+
+#
+# 
+# 
+#         
+

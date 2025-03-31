@@ -11,3 +11,4 @@ admin.site.register(ProductStorage)
 admin.site.register(ProductImage)
 admin.site.register(Review)
 admin.site.register(RelatedProduct)
+

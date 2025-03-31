@@ -252,7 +252,7 @@
         <section class="related-products">
             <h2>You May Also Like</h2>
             <div class="product-grid">
-                {% for related in related_products %}
+                {% for  related in related_products %}
                     <div class="product-card">
                         {% with primary_image=related.images.all|dictsort:"is_primary"|last %}
                             {% if primary_image %}

@@ -87,7 +87,8 @@ def add_review(request, slug):
     return redirect("store:product_details", slug=slug)    
     
 
-
+def account(request):
+    return render(request, 'store/account.html')
 
 def old_url_redirect(request):
 
