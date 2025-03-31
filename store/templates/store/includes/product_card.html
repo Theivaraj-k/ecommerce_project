@@ -3,8 +3,8 @@
 <div class="product-grid">
     <div class="product-card">
         <div class="product-img-container">
-            {% if FeatureProduct.image %}
-            <img class="product-image" src="{ feature.image.url }" alt="{{ feature.name }}">
+            {% if feature.image.url %}
+            <img class="product-image" src="{ feature.image }" alt="{{ feature.name }}">
             {% else %}
             <img class="product-image" src="{% static 'images/apple.jpg' %}" alt="No Image Available">
             {% endif %}
