@@ -4,7 +4,7 @@
     <div class="product-card">
         <div class="product-img-container">
             {% if feature.image %}
-            <img class="feature-image" src="{feature.image.url}" alt="{{ feature.name }}">
+            <img class="feature-image" src="{{feature.image.url}}" alt="{{ feature.name }}">
             {% else %}
             <img class="feature-image" src="{% static 'images/apple.jpg' %}" alt="No Image Available">
             {% endif %}
