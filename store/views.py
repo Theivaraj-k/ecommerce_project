@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect,reverse
 from django.views.generic import ListView, DetailView
+from django.http import HttpResponse
 from django.http import JsonResponse
 from django.contrib import messages
 from django.db.models import Avg
@@ -89,6 +90,10 @@ def add_review(request, slug):
 
 def account(request):
     return render(request, 'store/account.html')
+
+
+def dev(request):
+    return render(request, 'store/dev.html')
 
 def old_url_redirect(request):
 
