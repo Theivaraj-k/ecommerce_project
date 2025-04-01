@@ -92,8 +92,8 @@ def account(request):
     return render(request, 'store/account.html')
 
 
-def dev(request):
-    return render(request, 'store/dev.html')
+#def dev(request):
+#    return render(request, 'store/dev.html')
 
 def old_url_redirect(request):
 
